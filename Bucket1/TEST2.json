@@ -119,7 +119,37 @@
       "x" : 0.0,
       "y" : 0.0
     },
-    "processGroups" : [ ],
+    "processGroups" : [ {
+      "comments" : "",
+      "componentType" : "PROCESS_GROUP",
+      "connections" : [ ],
+      "controllerServices" : [ ],
+      "defaultBackPressureDataSizeThreshold" : "1 GB",
+      "defaultBackPressureObjectThreshold" : 10000,
+      "defaultFlowFileExpiration" : "0 sec",
+      "executionEngine" : "INHERITED",
+      "flowFileConcurrency" : "UNBOUNDED",
+      "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
+      "funnels" : [ ],
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "ce6aab62-2b59-3b57-a11a-997b95774fb4",
+      "inputPorts" : [ ],
+      "labels" : [ ],
+      "logFileSuffix" : "",
+      "maxConcurrentTasks" : 1,
+      "name" : "testcontext",
+      "outputPorts" : [ ],
+      "parameterContextName" : "testcontext",
+      "position" : {
+        "x" : 1511.0,
+        "y" : 179.013916015625
+      },
+      "processGroups" : [ ],
+      "processors" : [ ],
+      "remoteProcessGroups" : [ ],
+      "scheduledState" : "ENABLED",
+      "statelessFlowTimeout" : "1 min"
+    } ],
     "processors" : [ {
       "autoTerminatedRelationships" : [ ],
       "backoffMechanism" : "PENALIZE_FLOWFILE",
@@ -628,6 +658,18 @@
   "flowEncodingVersion" : "1.0",
   "latest" : false,
   "parameterContexts" : {
+    "testcontext" : {
+      "componentType" : "PARAMETER_CONTEXT",
+      "inheritedParameterContexts" : [ ],
+      "name" : "testcontext",
+      "parameters" : [ {
+        "description" : "",
+        "name" : "test",
+        "provided" : false,
+        "sensitive" : false,
+        "value" : "test"
+      } ]
+    },
     "NIFI" : {
       "componentType" : "PARAMETER_CONTEXT",
       "inheritedParameterContexts" : [ ],
